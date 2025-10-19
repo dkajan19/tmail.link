@@ -28,3 +28,6 @@ If you encounter any bugs or have ideas for new features, feel free to open an i
 This project is not affiliated with or endorsed by tmail.link. The developer is not responsible for how this service is used. Use at your own risk.
 
 **License:** The APK is for personal use only. You may download and install it, and share links to this repository, but you may not redistribute, modify, or commercialize the app. See the [LICENSE](./LICENSE) file for details.
+
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=dkajan19.tmail.link)
+
