@@ -23,6 +23,8 @@
 
 **You can download the latest APK from the [Releases](../../releases) page.**
 
+[<img src="https://github.com/user-attachments/assets/713d71c5-3dec-4ec4-a3f2-8d28d025a9c6" alt="Get it on Obtainium" height="80">](https://apps.obtainium.imranr.dev/redirect.html?r=obtainium://add/https://github.com/dkajan19/tmail.link/releases)
+
 If you encounter any bugs or have ideas for new features, feel free to open an issue. The developer will try to fix bugs and consider feature requests.
 
 This project is not affiliated with or endorsed by tmail.link. The developer is not responsible for how this service is used. Use at your own risk.
