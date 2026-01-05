@@ -2,6 +2,8 @@
 
 **tmail.link** is an Android app that lets you create temporary email addresses using the public service hosted at [https://tmail.link/](https://tmail.link/). The inbox of each temporary email is automatically cleared every 24 hours. 
 
+<a href='https://ko-fi.com/J3J11RQE5L' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+
 **How it works:**  
 - Generate a new temporary email address directly in the app.  
 - Access the inbox to read incoming emails.  
