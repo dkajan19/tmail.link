@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.view.insets.ProtectionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/protectionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/rootView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/email_box_background"
+            android:padding="16dp"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="4dp">
+
+                <ImageView
+                    android:id="@+id/emailIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:tint="?attr/colorPrimary"
+                    android:src="@drawable/email_fast_outline"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/emailTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Generating email..."
+                    android:textStyle="bold"
+                    android:textColor="?attr/colorPrimary"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <Button
+                    android:id="@+id/copyButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Copy"
+                    android:layout_marginEnd="8dp"
+                    android:drawableLeft="@drawable/content_copy"
+                    android:drawableTint="?attr/colorOnPrimary"
+                    android:drawablePadding="8dp"
+                    />
+
+                <Button
+                    android:id="@+id/regenerateButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="New Mail"
+                    android:drawableLeft="@drawable/refresh"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="?attr/colorOnPrimary"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/noContentLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="-100dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/noContentGif"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/pentol_quby_animation"
+                android:contentDescription="No content" />
+
+            <TextView
+                android:id="@+id/noContentText"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:text="Please check your connection."
+                android:textAlignment="center"
+                android:textColor="?attr/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/helpFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="60dp"
+        android:layout_gravity="bottom|end"
+        android:contentDescription="Help"
+        android:src="@drawable/lifebuoy"
+        app:backgroundTint="?attr/colorTertiary"
+        app:tint="?attr/colorPrimary"
+        app:useCompatPadding="true"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+        app:elevation="8dp" />
+
+</androidx.core.view.insets.ProtectionLayout>

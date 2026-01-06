@@ -1,0 +1,18 @@
+<resources>
+    <style name="Theme.TmailLink" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@android:color/system_accent1_500</item>
+        <item name="colorOnPrimary">@android:color/system_accent1_50</item>
+        <item name="colorSecondary">@android:color/system_accent1_500</item>
+        <item name="colorOnSecondary">@android:color/system_accent2_50</item>
+        <item name="colorTertiary">@android:color/system_accent1_100</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="android:navigationBarColor">?attr/colorPrimary</item>
+        <item name="android:textColorHighlight">@android:color/system_accent1_200</item>
+
+        <!-- Splash screen -->
+        <item name="android:windowSplashScreenBackground">?attr/colorTertiary</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash_inset</item>
+        <item name="android:windowSplashScreenAnimationDuration">2000</item>
+    </style>
+
+</resources>

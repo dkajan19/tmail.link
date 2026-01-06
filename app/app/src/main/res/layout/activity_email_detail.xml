@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.view.insets.ProtectionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/protectionLayoutDetailActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmailDetailActivity">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootViewDetailActivity"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_margin="16dp">
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="16dp"
+            android:drawableLeft="@drawable/inbox_arrow_down"
+            android:drawableTint="?attr/colorOnPrimary"
+            android:text="Back to Inbox"/>
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/delete_forever"
+            android:drawableTint="?attr/colorOnPrimary"
+            android:text="Delete Email"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/email_box_background"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/fromIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/account_edit"
+                android:tint="?attr/colorPrimary"
+                android:layout_marginEnd="5dp" />
+
+            <TextView
+                android:id="@+id/emailFrom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textIsSelectable="true"
+                android:text="Sender's name or email here"
+                android:textColor="?attr/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/toIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/account_eye"
+                android:tint="?attr/colorPrimary"
+                android:layout_marginEnd="5dp" />
+
+            <TextView
+                android:id="@+id/emailTo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textIsSelectable="true"
+                android:text="Recipient's name or email here"
+                android:textColor="?attr/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/subjectIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/tag_text_outline"
+                android:tint="?attr/colorPrimary"
+                android:layout_marginEnd="5dp" />
+
+            <TextView
+                android:id="@+id/emailSubject"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Your email subject here"
+                android:textIsSelectable="true"
+                android:textColor="?attr/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/calendar_clock"
+                android:tint="?attr/colorPrimary"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp" />
+
+            <TextView
+                android:id="@+id/emailDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Date/Time Here"
+                android:textIsSelectable="true"
+                android:textColor="?attr/colorPrimary"
+                android:layout_marginVertical="5dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/emailWebView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="21dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:overScrollMode="never"/>
+</LinearLayout>
+</androidx.core.view.insets.ProtectionLayout>
